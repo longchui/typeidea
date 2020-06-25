@@ -29,8 +29,14 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# 将blog，comment，config放到setting配置中，django才能识别这些App
+# INSTALLED_APPS的列表顺序需要格外注意，
 INSTALLED_APPS = [
+    'blog',
+    'config',
+    'comment',
+
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
